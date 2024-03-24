@@ -1,0 +1,175 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: auto;
+    margin: 0 auto;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  nav {
+    padding-top: 15px;
+  }
+  .banner_section {
+    width: auto;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banneritems h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banneritems {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .banneritems h3 {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 0;
+  }
+  .bannerimg {
+    width: 100%;
+    height: auto;
+  }
+  button {
+    text-align: center;
+  }
+
+  .Services {
+    display: block;
+  }
+  .feature {
+    display: block;
+    padding: 50px 0;
+    margin: 80px 0px;
+  }
+  .feauture_items img {
+    width: 100%;
+  }
+  .feauture_items h5 {
+    font-size: 15px;
+  }
+  .feauture_items h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .feauture_items:last-child {
+    padding: 0 20px;
+  }
+  .form {
+    flex-direction: column;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+  .fotter_items {
+    flex-basis: 50%;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .iconsection {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    padding: 50px 50px;
+  }
+
+  .contact-info:before {
+    display: none;
+  }
+  .text,
+  .information,
+  .social-media p {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .icon {
+    width: 23px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btn {
+    padding: 0.45rem 1.2rem;
+  }
+  .form {
+    flex-direction: row;
+  }
+}
+.fotter_items {
+  flex-basis: 50%;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  .navbar {
+    padding: 50px 50px;
+  }
+  .fotter_items {
+    flex-basis: 25%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 1140px;
+  }
+  .navbar {
+    padding: 50px 20px;
+  }
+  .fotter_items {
+    flex-basis: 25%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    padding: 10px 0px;
+  }
+  .fotter_items {
+    flex-basis: 25%;
+  }
+}
