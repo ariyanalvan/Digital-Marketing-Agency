@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
+  width: auto;
   
 }
 header {
@@ -53,7 +54,7 @@ ul li a {
 }
 .banner_section {
   background-color: #f5f4fd;
-  width: 1280px;
+  /* width: 1280px; */
   margin: 0px auto;
   border-radius: 10px;
 }
@@ -99,10 +100,8 @@ service secxtions */
   margin: auto;
 }
 .Services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  display: grid;
+ padding-bottom: 80px;
 }
 .card {
   background-color: white;
@@ -166,14 +165,10 @@ footer{
   padding-top: 80px;
 }
 .col{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-  
-.fotter_items{
-flex-basis: 25%;
-}
+
 .iconsection{
   display: flex;
   justify-content: space-between;
@@ -185,6 +180,7 @@ flex-basis: 25%;
 list-style: none;
 padding: 10px 0;
 font-size: 18px;
+line-height: 20px;
 }
 .social_icons{
   font-size: 25px;
@@ -201,6 +197,18 @@ font-size: 18px;
 }
 .bgmap{
   background-color:#F0FFFF;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.534);
+  
+}
+iframe {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 20px 40px -14px rgba(71, 65, 65, 0.295);
 
+}
+.bg-100{
+  background-color: #F5F4FD;
+
+}
+.banner-color{
+  background-color: #f5f4fd;
 }

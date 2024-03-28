@@ -39,7 +39,7 @@
   }
 
   .Services {
-    display: block;
+    grid-template-columns:1fr ;
   }
   .feature {
     display: block;
@@ -62,22 +62,9 @@
   .form {
     flex-direction: column;
   }
-
-  .contact-info:before {
-    bottom: initial;
-    top: -75px;
-    right: 65px;
-    transform: scale(0.95);
-  }
-
-  .contact-form:before {
-    top: -13px;
-    left: initial;
-    right: 70px;
-  }
-
   .text {
     margin: 1rem 0 1.5rem 0;
+    font-size: 20px;
   }
 
   .social-media {
@@ -92,7 +79,10 @@
     flex-direction: column;
     text-align: center;
   }
-}
+  .col{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  }}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -100,9 +90,6 @@
     padding: 50px 50px;
   }
 
-  .contact-info:before {
-    display: none;
-  }
   .text,
   .information,
   .social-media p {
@@ -149,6 +136,9 @@
   .fotter_items {
     flex-basis: 25%;
   }
+  .Services{
+    grid-template-columns:1fr 1fr ;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -162,6 +152,9 @@
   .fotter_items {
     flex-basis: 25%;
   }
+  .Services{
+    grid-template-columns:1fr 1fr 1fr ;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -171,5 +164,8 @@
   }
   .fotter_items {
     flex-basis: 25%;
+  }
+  .Services{
+    grid-template-columns:1fr 1fr 1fr ;
   }
 }
